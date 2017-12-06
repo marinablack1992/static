@@ -1,24 +1,55 @@
 <!DOCTYPE HTML>
+
+<!-- doctype tells the browser how to read the following file. it knows to read this as html, it now reads the <tags> etc. -->
 <html lang="en">
 
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>basic.html</title>
+    <meta name='description' content='html, some css, one javascript'>
+    <meta name='keywords' content='html, css, javascript'>
+    <meta name='media' content='screen'>
     <meta charset="UTF-8" />
 </head>
-
 <body>
     <div class='outer'>
-        <h1>HEADLINE</h1>
-        <p>PARAGRAPH IT</p>
-        <span>SPAN IT</span>
-        <div>DIV IT</div>
+        <h1>WORLDS</h1>
+        <p>BEST</p>
+        <span>VIDEOS</span>
+        <ol>
+            <li>it really is</li>
+            <li>the best!</li>
+        </ol>
         <video width="500" height="281" controls>
             <source src="/vid1.mp4" type="video/mp4" />
         </video>
+        <audio controls>
+            <source src='/audio/mp3' type='audio/mpeg' />
+        </audio>
 
         <img src='https://i.pinimg.com/originals/e9/89/61/e9896186f55021eeb4a5f39fea811124.png' />
+        <footer>Thanks for stopping by!</footer>
+        <script type="text/javascript">
+            alert("1111");
+        </script>
     </div>
 </body>
 
 </html>
+
+<!-- custom: if I were to write a tag <marina></marina> it wouldn't really be the best idea because the computer can't understand the actual meaning of the tag. it may be able to read the syntax itself, but it won't know how to process it or find meaning behind it. this relates to web semantics because web semantics are all about understand the meaning behind the syntax, and if i just created my own tag there isn't anything in play that can help the computer understand what i mean when i put text in a marina tag. -->
+<!-- semantic: semantics refer to the meaning of something. writing 'div' in a tag is syntax, but the meaning of div is where semantics come in. we've taught computers to read syntax and do certain things based off of the semantics of said syntax. -->
+<!-- what's the goal: the goal is to talk to computers so that they can understand what we want from them. -->
+<!-- what purpose does it serve? we can get documents, and format documents and the computer can read and spit out the correct information based off of the syntax/semantics. -->
+<!-- Best practices in HTML5:
+    Always declare a doc type.
+    Use self-closing tags whenever possible.
+    Use the tags html provides for you, don't make custom tags.
+    Define language in html tag.
+    Always use the title tag for accessibility.
+    Use the proper elements to layout your page. It helps keep things organized.
+    Have consistent indentations.
+    Stick to lowercase within html tags/classes/ids etc. to improve readability.
+    Be consistent with quotes. -->
+
+
